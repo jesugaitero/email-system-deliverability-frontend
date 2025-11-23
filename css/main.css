@@ -1,0 +1,88 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;500;600&display=swap');
+/* can now reference my font */
+body {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  margin: 0.7rem !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  background-color: #fa1e4e !important;
+}
+
+.ql-editor{
+  color:white;
+  /* border: 3px solid #8c7db0; */
+  max-height: 200px;
+  min-height: 100px;
+}
+
+.ql-container, .ql-snow{
+  border: 3px solid #8c7db0 !important;
+
+  border-radius: 1rem;
+}
+
+/* p{
+  color:white !important;
+} */
+
+
+article {
+  position: relative;
+  width: inherit;
+  height: 100px;
+  margin: 5px;
+  float: left;
+  /* border: 2px solid #fa1e4e; */
+  box-sizing: border-box;
+  background-color: rgba(183,194,243,0.3);
+  border-radius: 1rem;
+}
+
+article div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  border-radius: 1rem;
+  transition: .5s ease;
+}
+
+article input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 140px; */
+  width: -webkit-fill-available;
+  height: 100px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked ~ div {
+  border: 4px solid #fa1e4e;
+  border-radius: 1rem;
+  /* background-color: #50bcf2; */
+}
+
+
+.divForHoverItem {
+  /*just so we can see it*/
+  height: 50px;
+  width: 300px;
+  /* background-color: red; */
+}
+
+.diddenText {
+  display: none;
+}
+
+.divForHoverItem:hover .diddenText {
+  display:block;
+}
+
+.md-editor{
+  
+}
